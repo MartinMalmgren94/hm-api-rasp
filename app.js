@@ -15,14 +15,14 @@ dotenv.config();
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 // adding morgan to get print on incoming requests.
-app.use(morgan("dev"));
+app.use(morgan("tiny"));
 
 
 
-app.get("/test", (res, req, next) => {
+// app.get("/test", (res, req, next) => {
   
   
-});
+// });
 
 // Schuling jobs to fetch data
 schedule.scheduleJob(onceEveryDay(), function(){
